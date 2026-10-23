@@ -10,8 +10,37 @@
     <body>
         <h1>Genshin impact pull calculator</h1>
 
+        
+        <label id="banner">Banner</label>
+        <input type="text" id="banner" list="bannerList">
+        <label id="Guaranteed_status">Guaranteed status</label>
+        <input type="text" id="Guaranteed_status" list="Guaranteed_status_list">
+        <label id="Pity_counter">Curent pity</label>
+        <input type="number" id="Pity_counter">
+        <label id="Priomgems">Number of Primogems</label>
+        <input type="number" id="Primogems">
+        <label id="Acquaint_Fates">Number of Acquaint Fates</label>
+        <input type="number" id="Acquaint_Fates">
+        <label id="Intertwined_Fates">Number of Intertwined Fates</label>
+        <input type="number" id="Intertwined_Fates">
+        <label id="Nummber_of_characters">Nummber of characters</label>
+        <input type="number" id="Nummber_of_characters">
 
-        <button onclick = "Calculate_pulls()">Calculate pulls</button>
-        <p id = "calculation_output"></p>
+        <!--må lage et program somm sjekker banner og viser fram rett Fates-->
+
+        <button onclick="Calculate_pulls()">Calculate pulls</button>
+        <p id="calculation_output"></p>
+
+        <datalist id="Guaranteed_status_list">
+            <option value="Yes">
+            <option value="No">
+        </datalist>
+
+        <datalist id="bannerList">
+            <option value="Limited Character Banner">
+            <option value="Limited Weapon Banner">
+            <option value="Standerd Banner">
+            <option value="Chronicled Wish">
+        </datalist>
     </body>
 </html>
