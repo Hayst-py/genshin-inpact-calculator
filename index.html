@@ -11,22 +11,35 @@
         <h1>Genshin impact pull calculator</h1>
 
         
-        <label id="banner">Banner</label>
-        <input type="text" id="banner" list="bannerList">
+        <label for="banner">Banner</label>
+        <select id="banner">
+            <option value="">Velg banner</option>
+            <option value="limited">Limited Character Banner</option>
+            <option value="standard">Standard Banner</option>
+        </select>
+
         <label id="Guaranteed_status">Guaranteed status</label>
         <input type="text" id="Guaranteed_status" list="Guaranteed_status_list">
+
         <label id="Pity_counter">Curent pity</label>
         <input type="number" id="Pity_counter">
+
         <label id="Priomgems">Number of Primogems</label>
         <input type="number" id="Primogems">
-        <label id="Acquaint_Fates">Number of Acquaint Fates</label>
-        <input type="number" id="Acquaint_Fates">
-        <label id="Intertwined_Fates">Number of Intertwined Fates</label>
-        <input type="number" id="Intertwined_Fates">
+
+        <div id="acquaintFatesField" hidden>
+            <label for="Acquaint_Fates">Number of Acquaint Fates</label>
+            <input type="number" id="Acquaint_Fates">
+        </div>
+
+        <div id="intertwinedFatesField" hidden>
+            <label for="Intertwined_Fates">Number of Intertwined Fates</label>
+            <input type="number" id="Intertwined_Fates">
+        </div>
+
         <label id="Nummber_of_characters">Nummber of characters</label>
         <input type="number" id="Nummber_of_characters">
 
-        <!--må lage et program somm sjekker banner og viser fram rett Fates-->
 
         <button onclick="Calculate_pulls()">Calculate pulls</button>
         <p id="calculation_output"></p>
@@ -38,9 +51,7 @@
 
         <datalist id="bannerList">
             <option value="Limited Character Banner">
-            <option value="Limited Weapon Banner">
             <option value="Standerd Banner">
-            <option value="Chronicled Wish">
         </datalist>
     </body>
 </html>
