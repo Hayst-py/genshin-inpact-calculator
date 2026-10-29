@@ -18,13 +18,13 @@
             <option value="standard">Standard Banner</option>
         </select>
 
-        <label id="Guaranteed_status">Guaranteed status</label>
+        <label for="Guaranteed_status">Guaranteed status</label>
         <input type="text" id="Guaranteed_status" list="Guaranteed_status_list">
 
-        <label id="Pity_counter">Curent pity</label>
-        <input type="number" id="Pity_counter">
+        <label for="Pity_counter">Curent pity</label>
+        <input type="number" id="Pity_counter" min="0" max="89" step="1">
 
-        <label id="Priomgems">Number of Primogems</label>
+        <label for="Primogems">Number of Primogems</label>
         <input type="number" id="Primogems">
 
         <div id="acquaintFatesField" hidden>
@@ -37,8 +37,8 @@
             <input type="number" id="Intertwined_Fates">
         </div>
 
-        <label id="Nummber_of_characters">Nummber of characters</label>
-        <input type="number" id="Nummber_of_characters">
+        <label for="number_of_characters">Number of characters</label>
+        <input type="number" id="number_of_characters" min="0">
 
 
         <button onclick="Calculate_pulls()">Calculate pulls</button>
